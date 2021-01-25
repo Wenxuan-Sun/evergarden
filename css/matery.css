@@ -115,7 +115,7 @@ pre {
     content: " ";
     position: absolute;
     border-radius: 50%;
-    background: #ff5f56;
+    background: #c97e38;
     width: 12px;
     height: 12px;
     top: 0;
@@ -248,11 +248,11 @@ mark {
 }
 
 .bg-color {
-    background-image: linear-gradient(to right, #58339c 0%, #0f9d58 100%);
+    background-image: linear-gradient(to right, #5f449c 0%, #12ac92 100%);
 }
 
 .text-color {
-    color: #0f9d58 !important;
+    color: #0f9d8a !important;
 }
 
 .white-color {
@@ -396,8 +396,8 @@ header .side-nav .social-link {
 }
 
 .cover-btns a:hover {
-    border: 1px solid #f44336;
-    background-color: #f44336;
+    border: 1px solid #91efff;
+    background-color: #91efff;
     box-shadow: 0 14px 26px -12px rgba(233, 30, 99, 0.42), 0 4px 23px 0 rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(233, 30, 99, 0.2);
 }
 
@@ -871,7 +871,7 @@ article a {
 
 article a:hover {
     font-weight: bold;
-    color: #42b983;
+    color: #9eebc8;
     text-decoration: underline;
 }
 
@@ -1296,7 +1296,7 @@ thead {
 
 .chip-container .chip-active {
     color: #FFF !important;
-    background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%) !important;
+    background: linear-gradient(to bottom right, #8df6fd 0%, #8df6fd 100%) !important;
     box-shadow: 2px 5px 10px #aaa !important;
 }
 
@@ -1325,7 +1325,7 @@ thead {
 }
 
 .chip-default .tag-length {
-    color: #e91e63;
+    color: #1ecbe9;
     margin-top: 1px;
 }
 
@@ -1342,7 +1342,7 @@ thead {
     height: 80px;
     margin: 10px 0 50px -20px;
     padding: 21px 10px;
-    background-color: #ff5722;
+    background-color: #e0832b;
     color: #fff;
     font-size: 1.8rem;
     font-weight: 600;
@@ -1358,7 +1358,7 @@ thead {
     height: 60px;
     margin: 10px 0 30px -10px;
     padding: 14px 16px;
-    background-color: #ef6c00;
+    background-color: #c97129;
     color: #fff;
     font-size: 1.7rem;
     font-weight: 600;
@@ -1893,7 +1893,7 @@ footer .copy-right {
 }
 
 .top-scroll .btn-floating {
-    background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%);
+    background: linear-gradient(to bottom right, #a63aff 0%, #a63aff 100%);
     width: 48px;
     height: 48px;
 }
