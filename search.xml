@@ -1,45 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>宽怀的传说</title>
-      <link href="kuan-huai-de-chuan-shuo.html"/>
-      <url>kuan-huai-de-chuan-shuo.html</url>
-      
-        <content type="html"><![CDATA[]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>测试</title>
-      <link href="ce-shi.html"/>
-      <url>ce-shi.html</url>
-      
-        <content type="html"><![CDATA[<p><img src="https://s3.ax1x.com/2021/01/24/sbGsyQ.jpg"></p><p>大概做出来就是这样的，不知道看起来会是怎样，试试吧。</p>]]></content>
-      
-      
+<search>
+  <entry>
+    <title>宽怀的传说</title>
+    <url>/kuan-huai-de-chuan-shuo.html</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>测试</title>
+    <url>/ce-shi.html</url>
+    <content><![CDATA[<p><img src="https://s3.ax1x.com/2021/01/24/sbGsyQ.jpg"></p>
+<p>大概做出来就是这样的，不知道看起来会是怎样，试试吧。</p>
+]]></content>
       <categories>
-          
-          <category> 搭建 </category>
-          
+        <category>搭建</category>
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 测试 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-  
-  
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
 </search>
