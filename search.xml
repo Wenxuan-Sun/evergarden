@@ -26,17 +26,17 @@
 <p>nvm全称是node version manager，安装了git以后可以用git安装nvm. 在终端输入命令</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;nvm-sh&#x2F;nvm.git .nvm</span><br></pre></td></tr></table></figure>
 <p>安装完成后为了方便使用，需要添加如下内容：</p>
-<p>输入<code>vim ~/.zshrc</code>终端会提示进入了vim模式，然后按<code>i</code>键，将下面的代码插入到文件中</p>
+<p>输入 <code>vim ~/.zshrc</code>终端会提示进入了vim模式，然后按 <code>i</code>键，将下面的代码插入到文件中</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">export NVM_DIR&#x3D;&quot;$HOME&#x2F;.nvm&quot;</span><br><span class="line">[ -s &quot;$NVM_DIR&#x2F;nvm.sh&quot; ] &amp;&amp; \. &quot;$NVM_DIR&#x2F;nvm.sh&quot;  # This loads nvm</span><br></pre></td></tr></table></figure>
-<p>然后输入<code>:wq</code>    文件保存并退出。</p>
-<h4 id="用nvm安装node-js"><a href="#用nvm安装node-js" class="headerlink" title="用nvm安装node.js"></a>用nvm安装node.js</h4><p>输入<code>nvm ls-remote</code>获取node版本号，找到带有LTS的版本号（一般找最新），然后输入<code>nvm install 6.14.4(替换成版本号)</code>进行安装。</p>
+<p>然后输入 <code>:wq</code>    文件保存并退出。</p>
+<h4 id="用nvm安装node-js"><a href="#用nvm安装node-js" class="headerlink" title="用nvm安装node.js"></a>用nvm安装node.js</h4><p>输入 <code>nvm ls-remote</code>获取node版本号，找到带有LTS的版本号（一般找最新），然后输入 <code>nvm install 6.14.4(替换成版本号)</code>进行安装。</p>
 <p>过程会比较漫长，需要在终端里下载并解压（自动完成，请耐心等待）</p>
-<p>安装完成后输入<code>node -v</code>和<code>npm -v</code>进行检查，显示出版本号则表示安装成功。</p>
+<p>安装完成后输入 <code>node -v</code>和 <code>npm -v</code>进行检查，显示出版本号则表示安装成功。</p>
 <h3 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h3><p>上述过程完成后，输入</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
-<p>等待安装完成，输入<code>hexo -v</code>检查。</p>
+<p>等待安装完成，输入 <code>hexo -v</code>检查。</p>
 <h3 id="注册github账号"><a href="#注册github账号" class="headerlink" title="注册github账号"></a>注册github账号</h3><p><a href="https://github.com/">https://github.com/</a> 在上面根据提示注册账号，username最好填自己想用的域名，邮箱用自己的常用邮箱方便接收验证邮件（后面经常用到）</p>
-<p>点击<code>New repository</code>新建仓库，推荐使用“username.github.io”的形式，勾选“read me”选项</p>
+<p>点击 <code>New repository</code>新建仓库，推荐使用“username.github.io”的形式，勾选“read me”选项</p>
 <p>仓库建好之后进入settings，向下滑动到GitHub Page，source一栏中选择branch: main，文件夹/(root), 然后点save</p>
 <h4 id="关联个人域名（选做）"><a href="#关联个人域名（选做）" class="headerlink" title="关联个人域名（选做）"></a>关联个人域名（选做）</h4><p>对于新注册的github账号，如果第一个仓库是“username.github.io”形式，则github pages对应的域名会是<a href="https://username.github.io/">https://username.github.io</a></p>
 <p>如果不想用这个域名，则可以选择关联自己的域名，详见<a href="/ce-shi.html" title="关联个人域名">关联个人域名</a></p>
@@ -50,7 +50,7 @@
 <p>一路回车，不要输入密码（可能会提示），然后会显示生成了.ssh文件夹，接下来输入</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">cat ~&#x2F;.ssh&#x2F;id_rsa.pub</span><br></pre></td></tr></table></figure>
 <p>复制输出的内容，然后登陆github网页，在头像的位置选择settings，再点击SSH and GPG keys，新建一个ssh，名称随意，将刚才复制的内容粘贴进去。</p>
-<p>在终端输入<code>ssh -T git@github.com</code>，如果出现用户名则说明成功。</p>
+<p>在终端输入 <code>ssh -T git@github.com</code>，如果出现用户名则说明成功。</p>
 <h3 id="写文章"><a href="#写文章" class="headerlink" title="写文章"></a>写文章</h3><h4 id="安装Typora"><a href="#安装Typora" class="headerlink" title="安装Typora"></a>安装Typora</h4><p><a href="https://typora.io/">https://typora.io/</a> 进入官网下载安装。</p>
 <p>hexo将markdown文件编译成网页文件，而typora是一个markdown编辑器，基本可以实现像用word一样写markdown文件，如果遇到不太清楚的markdown语法，可以查阅<a href="https://typora.io/">markdown常用语法</a></p>
 <h3 id="发布文章"><a href="#发布文章" class="headerlink" title="发布文章"></a>发布文章</h3><h4 id="hexo的使用流程"><a href="#hexo的使用流程" class="headerlink" title="hexo的使用流程"></a>hexo的使用流程</h4><p>安装部署插件</p>
@@ -58,7 +58,7 @@
 <p>首先输入</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo init blog</span><br></pre></td></tr></table></figure>
 <p>这里的blog是新建的文件夹名，可以设置为你想要的名字。</p>
-<p>接下来以及以后写博客，都要在这个目录下进行。输入<code>cd blog</code>进入文件夹，打开_config.yml文件，修改一些配置</p>
+<p>接下来以及以后写博客，都要在这个目录下进行。输入 <code>cd blog</code>进入文件夹，打开_config.yml文件，修改一些配置</p>
 <p>将最后一行改为</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https:&#x2F;&#x2F;github.com&#x2F;username&#x2F;username.github.io #填仓库的地址</span><br><span class="line">  branch: main</span><br></pre></td></tr></table></figure>
 <p>保存文件。</p>
@@ -75,7 +75,7 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">hexo n “文章”</span><br></pre></td></tr></table></figure>
 <p>则在目录blog\source\_posts中出现一个“文章.md”文件，这时候就可以用typora编写这个文件啦。</p>
 <p>删除文章需要手动删除markdown文件并重新生成。</p>
-<p>写完之后，首先在终端输入<code>hexo clean</code>清除之前的存留，然后输入<code>hexo g</code>生成，用<code>hexo s</code>预览，用<code>hexo d</code>部署。</p>
+<p>写完之后，首先在终端输入 <code>hexo clean</code>清除之前的存留，然后输入 <code>hexo g</code>生成，用 <code>hexo s</code>预览，用 <code>hexo d</code>部署。</p>
 <h2 id="个性化"><a href="#个性化" class="headerlink" title="个性化"></a>个性化</h2><h3 id="更换主题"><a href="#更换主题" class="headerlink" title="更换主题"></a>更换主题</h3><p>一个强大的主题可以大幅度节省布置网页需要的时间，以便我们将重心放在博客内容上。</p>
 <h3 id="参数解释"><a href="#参数解释" class="headerlink" title="参数解释"></a>参数解释</h3><h4 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h4><h4 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h4><h2 id="公开"><a href="#公开" class="headerlink" title="公开"></a>公开</h2><h3 id="百度收录"><a href="#百度收录" class="headerlink" title="百度收录"></a>百度收录</h3><h3 id="谷歌收录"><a href="#谷歌收录" class="headerlink" title="谷歌收录"></a>谷歌收录</h3><h2 id="问题处理"><a href="#问题处理" class="headerlink" title="问题处理"></a>问题处理</h2>]]></content>
       <categories>
